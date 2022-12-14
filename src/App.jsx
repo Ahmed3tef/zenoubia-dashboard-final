@@ -19,8 +19,6 @@ import UploadSize from './components/UploadForm/UploadSize';
 import {
   Login,
   Home,
-  // Ads,
-  // Categories,
   SubCategories,
   Products,
   Reports,
@@ -70,8 +68,6 @@ const App = () => {
               <Route path="/profile" element={<Profile />} />
               <Route path="/home" element={<Home />} />
 
-              {/* <Route path='/ads' element={<Ads />} /> */}
-              {/* <Route path='/categories' element={<Categories />} /> */}
               <Route path="/subcategories" element={<SubCategories />} />
               <Route path="/products" element={<Products />} />
               <Route path="/reports" element={<Reports />} />
@@ -90,15 +86,7 @@ const App = () => {
                 <Route path="upload-edit" element={<UploadCountry />} />
               </Route>
             </Routes>
-            {/* {currentTab === 'home' && <Home />}
-
-            {currentTab === 'ads' && <Ads />}
-            {currentTab === 'profile' && <Profile />}
-            {currentTab === 'categories' && <Categories />}
-            {currentTab === 'subcategories' && <SubCategories />}
-            {currentTab === 'products' && <Products />}
-            {currentTab === 'reports' && <Reports />}
-            {currentTab === 'orders' && <Orders />} */}
+           
           </main>
           <ToastContainer
             position="top-right"
