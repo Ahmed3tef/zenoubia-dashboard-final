@@ -1,0 +1,63 @@
+.delete-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-alt);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-overlay-content {
+  padding: 7rem 10rem;
+  margin: auto;
+  background-color: var(--color-main-darker);
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3rem;
+  box-shadow: inset var(--shadow-sidebar-nav-inner),
+    var(--shadow-sidebar-nav-inner);
+}
+.overlay-header {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: var(--color-alt);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.overlay-btns {
+  width: 36rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay-btn {
+  width: 12rem;
+  height: 4rem;
+  box-shadow: inset var(--shadow-sidebar-nav-inner),
+    var(--shadow-sidebar-nav-inner);
+  cursor: pointer;
+  background-color: var(--color-row-odd);
+  color: var(--color-main-darker);
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+.overlay-btn:hover {
+  transform: scale(1.08);
+}
+.overlay-btn:active {
+  transform: scale(0.98);
+}

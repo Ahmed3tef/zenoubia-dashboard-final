@@ -1,0 +1,14 @@
+export { default as Home } from './Home';
+export { default as Login } from './Login';
+export { default as Ads } from './Ads';
+export { default as Categories } from './Categories';
+export { default as SubCategories } from './SubCategories';
+export { default as Products } from './Products';
+export { default as Orders } from './Orders';
+export { default as Reports } from './Reports/Reports';
+export { default as Profile } from './Profile';
+export { default as Reviews } from './Reviews';
+export { default as Contact } from './Contact';
+export { default as Countries } from './Countries';
+export { default as Cities } from './Cities';
+export { default as Governments } from './Governments';

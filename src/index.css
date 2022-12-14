@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-main: #614873;
+  --color-main-darker: #3a204d;
+  --color-main-darkest: #2f1544;
+  --color-main-opacity: rgba(97, 72, 115, 0.9);
+
+  --color-row-odd: #f1ddff;
+  --color-row-even: var(--color-alt);
+  --color-review-img-odd: #f7ecde;
+  --color-review-img-even: #fcf8f4;
+  --color-comment: #060606;
+  --color-alt: #fff3f7;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-shadow-checkbox: rgba(0, 0, 0, 0.16);
+  --color-shadow-btn-login: rgba(138, 138, 138, 0.25);
+  --color-shadow-thead: rgba(0, 0, 0, 0.25);
+  --color-shadow-btn-login: rgba(138, 138, 138, 0.25);
+  --color-input-placeholder: rgba(138, 138, 138, 0.5);
+  --color-btn-shadow: rgba(138, 138, 138, 0.5);
+  --shadow-login: 5px 5px 6px #6a6768;
+  --shadow-sidebar-nav-inner: 0px 3px 6px var(--color-shadow-checkbox);
+  --shadow-sidebar-img: 7px 4px 6px var(--color-shadow-checkbox);
+  --shadow-table-row: 3px 3px 6px var(--color-shadow-checkbox);
+  --shadow-table-thead: 0px 3px 6px var(--color-shadow-thead);
+  --shadow-btn-form: 5px 5px 6px var(--color-btn-shadow);
+  --shadow-sidebar-nav-out: 5px 3px 6px var(--color-shadow-checkbox);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Merriweather', serif;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 60%;
+  }
+  .css-pghcvk {
+    height: 80rem !important;
+  }
+}
+@media (max-width: 1540px) {
+  html {
+    font-size: 45%;
+  }
+  /* .css-pghcvk {
+    height: 60rem !important;
+  } */
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 45%;
+  }
+}
+body {
+  font-size: 1.6rem !important;
+  background-color: var(--color-body-bg);
+  color: var(--color-white);
+  font-family: 'Merriweather', serif !important;
+}
+
+/* .container {
+  @media (min-width: 1500px) {
+    max-width: 1440px;
+  }
+  @media (max-width: 1200px) {
+    width: 1170px;
+  }
+  @media (max-width: 992px) {
+    width: 970px;
+  }
+  @media (max-width: 768px) {
+    width: 750px;
+  }
+  @media (max-width: 576px) {
+    width: auto;
+  }
+} */
+
+button,
+button:focus {
+  border: none;
+  outline: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: inherit;
+  font-style: inherit;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*
+ MuiCalendarPicker-root
+MuiPickersCalendarHeader-root
+MuiPickersDay-root  
+*/

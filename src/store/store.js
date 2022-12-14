@@ -1,0 +1,40 @@
+import { configureStore } from '@reduxjs/toolkit';
+import {
+  authSlice,
+  adminSlice,
+  // adsSlice,
+  // categoriesSlice,
+  ordersSlice,
+  productsSlice,
+  reportsSlice,
+  reviewsSlice,
+  subCategoriesSlice,
+  colors,
+  sizes,
+  mails,
+  countries,
+  cities,
+  governments,
+  subCatSizeAndColor,
+} from './reducers';
+
+export const store = configureStore({
+  reducer: {
+    auth: authSlice,
+    // ads: adsSlice,
+    admin: adminSlice,
+    // categories: categoriesSlice,
+    subCategories: subCategoriesSlice,
+    products: productsSlice,
+    orders: ordersSlice,
+    reports: reportsSlice,
+    reviews: reviewsSlice,
+    colors,
+    sizes,
+    mails,
+    countries,
+    cities,
+    governments,
+    subCatSizeAndColor,
+  },
+});

@@ -1,0 +1,20 @@
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  height: 4rem;
+  width: 40rem;
+  background-color: var(--color-alt);
+  border: 2px solid var(--color-main-darker);
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.search svg {
+  font-size: 4rem;
+  fill: var(--color-main-darker);
+  margin-left: 4rem;
+}
